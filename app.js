@@ -144,7 +144,7 @@ const setBlockClick = () => {
 };
 
 const removeBlockClick = () => {
-  document.querySelectorAll(".block").blocks.forEach((block) => {
+  document.querySelectorAll(".block").forEach((block) => {
     block.removeEventListener("click", handleBlockClick);
   });
 };
