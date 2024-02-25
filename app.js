@@ -99,7 +99,7 @@ const getBoxElement = (color) => {
 };
 
 const getBlockAudio = (element) => {
-  return `../assets/${element.id}.mp3`;
+  return `assets/${element.id}.mp3`;
 };
 
 const checkSequence = () => {
