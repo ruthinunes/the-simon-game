@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap");
+
+*,
+::after,
+::before {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.game__board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.4rem;
+}
+
+.game__blocks {
+  gap: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  min-height: 250px;
+  min-width: 250px;
+  position: relative;
+  border-radius: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.block {
+  opacity: 0.3;
+  cursor: pointer;
+  /* display: inline-block; */
+}
+
+.block-yellow {
+  background-color: rgb(252, 237, 93);
+}
+
+.block-green {
+  background-color: rgb(41, 235, 38);
+}
+
+.block-blue {
+  background-color: rgb(38, 126, 235);
+}
+
+.block-red {
+  background-color: rgb(235, 74, 38);
+}
+
+.game__status {
+  text-align: center;
+  display: flex;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button__start {
+  background-color: rgba(41, 235, 38, 0.5);
+  font-size: 1.6rem;
+  padding: 1.6rem 2.4rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  color: rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.button__start:hover {
+  background-color: greenyellow;
+}
+
+@media screen and (min-width: 500px) {
+  .game {
+    gap: 10px;
+    width: 350px;
+    height: 350px;
+  }
+}
